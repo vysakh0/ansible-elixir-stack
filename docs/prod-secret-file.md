@@ -5,11 +5,11 @@ This file is auto-generated when the app is setup. The following template is use
 ```elixir
 use Mix.Config
 
-config {{app_name}}, {{ app_endpoint }},
+config :{{app_name}}, {{ app_endpoint_module }},
   secret_key_base: "{{ secret_key_base }}"
 
 
-config {{ app_name }}, {{ app_repo_module }},
+config :{{ app_name }}, {{ app_repo_module }},
   adapter: Ecto.Adapters.Postgres,
   username: "{{ database_user }}",
   password: "{{ database_password }}",
